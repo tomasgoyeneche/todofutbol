@@ -12,104 +12,137 @@
 </head>
 <body>
 
-
-    <header>
-        <div class="contenedor__header">
-
-            <div class="contenedor__headerlogo">
-                <a href="../index.html"> <img class="header__logo" src="../images/logotodofutbol.png" alt="logo"></a>
-            </div>
-
-            <div class="contenedor__boton">
-                <label for="boton-menu">Menu</label>
-            </div>
-            <input type="checkbox" id="boton-menu">
-
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light">
             
-            <nav class="header__navegador  animate__animated animate__zoomIn">
-                <a href="../index.html">NOTICIAS</a></li>
-                <a href="../pages/argentina.html">ARGENTINA</a></li>
-                <a href="../pages/partidoss.html">PARTIDOS</a></li>
-                <a href="../pages/libertadores.html">LIBERTADORES</a></li>
-                <a href="../pages/contacto.html">CONTACTO</a></li>  
-            </nav>
+            <div class="navegin container-fluid">
 
-        </div>
+            <div class="navegacion">
 
-    </header>
-
-        <section class="contenedor__partidos">
-
-            
-    
-            <div>
-                <h2 class="dia"> Jueves </h2>
-                <h3 class="libertadores liga">Copa Libertadores</h3>
-                <p class="partido">19:00: Fortaleza vs Colo Colo</p>
-                <p class="partido">21:00: Estudiantes(LP) vs Velez</p>
-                <p class="partido">21:00: The Strongest vs Libertad</p>
-                <h3 class="sudamericana liga">Copa Sudamericana</h3>
-                <p class="partido">19:15: Cuiaba vs Melgar</p>
-                <p class="partido">19:15: River Plate(U) vs Racing</p>
-                <p class="partido">21:30: Barcelona(E) vs Wanderers(U)</p>
-                <p class="partido">21:30: Metropolitanos vs Lanus</p>
+            <div class="hedicon">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logotodofutbol.png" alt="" width="120" >
+                </a>
+            </div>
+            <div class="cont__nav">
+            <a class="navbar-brand" href="../index.html">Noticias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/argentina.html">Argentina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/partidoss.html">Partidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/libertadores.html">Libertadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
 
             </div>
-    
-            <div>
-                <h2 class="dia">Viernes</h2>
-                <h3 class="copaliga liga">Copa De La Liga</h3>
-                <p class="partido">19:00: Atl Tucuman vs Gimnasia (LP)</p>
-                <p class="partido">19:00: Arsenal vs Godoy Cruz</p>
-                <p class="partido">21:30: Sarmiento(J) vs San Lorenzo</p>
-                <p class="partido">21:30: Rosario Central vs Colon</p>
-                <h3 class="primeraNacional liga">Primera Nacional</h3>
-                <p class="partido">21:10: Atl Rafaela vs Alvarado</p>
-                <h3 class="ligaEspañola liga">Liga Española</h3>
-                <p class="partido">16:00: Sevilla vs Granada</p>
+
             </div>
+
+        </nav>
+    </header>   
+
+
+
+        <section class="contenedor__partidos container-fluid">
+
+            <div class=" row">
     
-            <div>
-                <h2 class="dia">Hoy</h2>
-                <h3 class="copaliga liga">Copa De La Liga</h3>
-                <p class="partido">14:00: Union vs Newells</p>
-                <p class="partido">16:30: Talleres (C) vs Def y Justicia</p>
-                <p class="partido">19:00: Independiente vs Tigre</p>
-                <p class="partido">21:30: Velez vs Boca Juniors</p>
-                <h3 class="ligaEspañola liga" >Liga Española</h3>
-                <p class="partido">09:00: Cadiz vs Betis</p>
-                <p class="partido">11:15: Mallorca vs Atletico Madrid</p>
-                <p class="partido">13:30: Villarreal vs Athletic Bilbao</p>
-                <p class="partido">16:00: Real Madrid vs Getafe</p>
+                <div class="col-12 col-xxl-2 ">
+                    <h2 class="dia"> Jueves </h2>
+                    <h3 class="libertadores liga">Copa Libertadores</h3>
+                    <p class="partido">19:00: Fortaleza vs Colo Colo</p>
+                    <p class="partido">21:00: Estudiantes(LP) vs Velez</p>
+                    <p class="partido">21:00: The Strongest vs Libertad</p>
+                    <h3 class="sudamericana liga">Copa Sudamericana</h3>
+                    <p class="partido">19:15: Cuiaba vs Melgar</p>
+                    <p class="partido">19:15: River Plate(U) vs Racing</p>
+                    <p class="partido">21:30: Barcelona(E) vs Wanderers(U)</p>
+                    <p class="partido">21:30: Metropolitanos vs Lanus</p>
+
+                </div>
+        
+                <div class=" col-12 col-xxl-2  ">
+                    <h2 class="dia">Viernes</h2>
+                    <h3 class="copaliga liga">Copa De La Liga</h3>
+                    <p class="partido">19:00: Atl Tucuman vs Gimnasia (LP)</p>
+                    <p class="partido">19:00: Arsenal vs Godoy Cruz</p>
+                    <p class="partido">21:30: Sarmiento(J) vs San Lorenzo</p>
+                    <p class="partido">21:30: Rosario Central vs Colon</p>
+                    <h3 class="primeraNacional liga">Primera Nacional</h3>
+                    <p class="partido">21:10: Atl Rafaela vs Alvarado</p>
+                    <h3 class="ligaEspañola liga">Liga Española</h3>
+                    <p class="partido">16:00: Sevilla vs Granada</p>
+                </div>
+        
+                <div class=" col-12 col-xxl-2 ">
+                    <h2 class="dia">Hoy</h2>
+                    <h3 class="copaliga liga">Copa De La Liga</h3>
+                    <p class="partido">14:00: Union vs Newells</p>
+                    <p class="partido">16:30: Talleres (C) vs Def y Justicia</p>
+                    <p class="partido">19:00: Independiente vs Tigre</p>
+                    <p class="partido">21:30: Velez vs Boca Juniors</p>
+                    <h3 class="ligaEspañola liga" >Liga Española</h3>
+                    <p class="partido">09:00: Cadiz vs Betis</p>
+                    <p class="partido">11:15: Mallorca vs Atletico Madrid</p>
+                    <p class="partido">13:30: Villarreal vs Athletic Bilbao</p>
+                    <p class="partido">16:00: Real Madrid vs Getafe</p>
+                </div>
+        
+                <div class="col-12 col-xxl-2 ">
+                    <h2 class="dia">Domingo</h2>
+                    <h3 class="copaliga liga">Copa De La Liga</h3>
+                    <p class="partido">14:00: Estudiantes (LP) vs Central Cba (SdE)</p>
+                    <p class="partido">16:30: Patronato vs Banfield</p>
+                    <p class="partido">19:00: Platense vs Racing Club</p>
+                    <p class="partido">21:30: River Plate vs Argentinos</p>
+                    <h3 class="ligaEspañola liga">Liga Española</h3>
+                    <p class="partido">09:00: Osasuna vs Alaves</p>
+                    <p class="partido">11:15: Espanyol vs Celta de Vigo</p>
+                    <p class="partido">13:30: Elche vs Real Sociedad</p>
+                    <p class="partido">16:00: Levante vs Barcelona</p>
+                </div>
+        
+                <div class="col-12 col-xxl-2  ">
+                    <h2 class="dia">Lunes</h2>
+                    <h3 class="copaliga liga">Copa De La Liga</h3>
+                    <p class="partido">14:00: Huracan Barracas Central</p>
+                    <p class="partido">16:30: Lanus vs Aldosivi</p>
+                    <h3 class="ligaEspañola liga">Liga Española</h3>
+                    <p class="partido">09:00: Rayo Vallecano vs Valencia</p>
+                    <h3 class="ligaItaliana liga">Liga Italiana</h3>
+                    <p class="partido">15:45: Bologna vs Sampdoria</p>
+                    
+                    
+                </div>
+
+                <div class="col-12 col-xxl-2 ">
+                    <h2 class="dia">Martes</h2>
+                    <h3 class="copaliga liga">Copa De La Liga</h3>
+                    <p class="partido">13:00: Velez vs Barracas Central</p>
+                    <p class="partido">16:30: Lanus vs Rosario Central</p>
+                    <h3 class="ligaEspañola liga">Liga Española</h3>
+                    <p class="partido">09:00: Real Madrid vs Valencia</p>
+                    <h3 class="ligaItaliana liga">Liga Italiana</h3>
+                    <p class="partido">15:45: Bologna vs Inter</p>
+                    
+                    
+                </div>
+
             </div>
-    
-            <div>
-                <h2 class="dia">Domingo</h2>
-                <h3 class="copaliga liga">Copa De La Liga</h3>
-                <p class="partido">14:00: Estudiantes (LP) vs Central Cba (SdE)</p>
-                <p class="partido">16:30: Patronato vs Banfield</p>
-                <p class="partido">19:00: Platense vs Racing Club</p>
-                <p class="partido">21:30: River Plate vs Argentinos</p>
-                <h3 class="ligaEspañola liga">Liga Española</h3>
-                <p class="partido">09:00: Osasuna vs Alaves</p>
-                <p class="partido">11:15: Espanyol vs Celta de Vigo</p>
-                <p class="partido">13:30: Elche vs Real Sociedad</p>
-                <p class="partido">16:00: Levante vs Barcelona</p>
-            </div>
-    
-            <div>
-                <h2 class="dia">Lunes</h2>
-                <h3 class="copaliga liga">Copa De La Liga</h3>
-                <p class="partido">14:00: Huracan Barracas Central</p>
-                <p class="partido">16:30: Lanus vs Aldosivi</p>
-                <h3 class="ligaEspañola liga">Liga Española</h3>
-                <p class="partido">09:00: Rayo Vallecano vs Valencia</p>
-                <h3 class="ligaItaliana liga">Liga Italiana</h3>
-                <p class="partido">15:45: Bologna vs Sampdoria</p>
-                
-                
-            </div>
-    
+
         </section>
     
     

@@ -13,41 +13,60 @@
 <body>
 
 
-    <header>
-        <div class="contenedor__header">
-
-            <div class="contenedor__headerlogo">
-                <a href="../index.html"> <img class="header__logo" src="../images/logotodofutbol.png" alt="logo"></a>
-            </div>
-
-            <div class="contenedor__boton">
-                <label for="boton-menu">Menu</label>
-            </div>
-            <input type="checkbox" id="boton-menu">
-
+      
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light">
             
-            <nav class="header__navegador animate__animated animate__zoomIn">
-                <a href="../index.html">NOTICIAS</a></li>
-                <a href="../pages/argentina.html">ARGENTINA</a></li>
-                <a href="../pages/partidoss.html">PARTIDOS</a></li>
-                <a href="../pages/libertadores.html">LIBERTADORES</a></li>
-                <a href="../pages/contacto.html">CONTACTO</a></li>  
-            </nav>
+            <div class="navegin container-fluid">
 
-        </div>
+            <div class="navegacion">
 
-    </header>
-    
+            <div class="hedicon">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logotodofutbol.png" alt="" width="120" >
+                </a>
+            </div>
+            <div class="cont__nav">
+            <a class="navbar-brand" href="../index.html">Noticias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/argentina.html">Argentina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/partidoss.html">Partidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/libertadores.html">Libertadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+
+            </div>
+
+            </div>
+
+        </nav>
+    </header>   
 
 
 
-    <div class="contenedor__general">
 
 
-        <section class="contenedor__tables">
+    <div class="contenedor__general container-fluid">
 
 
-            <div class="contenedor__table">
+        <section class="contenedor__tables row ">
+
+
+            <div class="contenedor__table col-6 col-sm-12 ">
 
                 <h2>Zona 1</h2>
 
@@ -71,7 +90,7 @@
                 </table>
             </div>
 
-            <div class="contenedor__table">
+            <div class="contenedor__table col-6 col-sm-12 ">
                 <h2>Zona 2</h2>
 
                 <table class="table">
@@ -98,18 +117,18 @@
 
         
 
-        <div class="contenedor__aside animate__animated animate__bounceInRight">
+        <div class="contenedor__aside ">
 
             <div class="contenedor__cards">
                 
-                <div class="card">
-                    <iframe class="card__video" src="https://www.youtube.com/embed/Sc7QW7TY0qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3 class="card__texto">River 0 - Boca 1</h3>
+                <div class="carta ">
+                    <iframe class="carta__video" src="https://www.youtube.com/embed/Sc7QW7TY0qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="carta__texto">River 0 - Boca 1</h3>
                 </div>
 
-                <div class="card"> 
-                    <iframe class="card__video" src="https://www.youtube.com/embed/RnFS9rQu5QU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3 class="card__texto">Indepediente 1 - Racing 2</h3>
+                <div class="carta "> 
+                    <iframe class="carta__video" src="https://www.youtube.com/embed/RnFS9rQu5QU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="carta__texto">Indepediente 1 - Racing 2</h3>
                 </div>  
 
             </div>

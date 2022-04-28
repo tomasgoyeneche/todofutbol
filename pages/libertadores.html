@@ -12,31 +12,50 @@
 </head>
 <body>
 
-
-    <header>
-        <div class="contenedor__header">
-
-            <div class="contenedor__headerlogo">
-                <a href="../index.html"> <img class="header__logo" src="../images/logotodofutbol.png" alt="logo"></a>
-            </div>
-
-            <div class="contenedor__boton">
-                <label for="boton-menu">Menu</label>
-            </div>
-            <input type="checkbox" id="boton-menu">
-
+ 
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light">
             
-            <nav class="header__navegador  animate__animated animate__zoomIn">
-                <a href="../index.html">NOTICIAS</a></li>
-                <a href="../pages/argentina.html">ARGENTINA</a></li>
-                <a href="../pages/partidoss.html">PARTIDOS</a></li>
-                <a href="../pages/libertadores.html">LIBERTADORES</a></li>
-                <a href="../pages/contacto.html">CONTACTO</a></li>  
-            </nav>
+            <div class="navegin container-fluid">
 
-        </div>
+            <div class="navegacion">
 
-    </header>
+            <div class="hedicon">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logotodofutbol.png" alt="" width="120" >
+                </a>
+            </div>
+            <div class="cont__nav">
+            <a class="navbar-brand" href="../index.html">Noticias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/argentina.html">Argentina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/partidoss.html">Partidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/libertadores.html">Libertadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+
+            </div>
+
+            </div>
+
+        </nav>
+    </header>   
+
+
 
     
 
@@ -50,7 +69,7 @@
 
     
 
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo A</h2>
                 <table class="tabla">
                     <thead>
@@ -63,7 +82,7 @@
                 </table>
             </div>
 
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo B</h2>
                 <table class="tabla">
                     <thead>
@@ -77,7 +96,7 @@
             </div>
 
 
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo C</h2>
                 <table class="tabla">
                     <thead>
@@ -91,7 +110,7 @@
             </div>
 
 
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo D</h2>
                 <table class="tabla">
                     <thead>
@@ -105,7 +124,7 @@
             </div>
 
 
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo E</h2>
                 <table class="tabla">
                     <thead>
@@ -118,7 +137,7 @@
                 </table>
             </div>
             
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo F</h2>
                 <table class="tabla">
                     <thead>
@@ -132,7 +151,7 @@
             </div>
 
 
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo G</h2>
                 <table class="tabla">
                     <thead>
@@ -147,7 +166,7 @@
 
 
 
-            <div class="contenedor__t">
+            <div class="contenedor__t table-responsive">
                 <h2>Grupo H</h2>
                 <table class="tabla">
                     <thead>
@@ -161,27 +180,21 @@
             </div>
 
             </div>
-        
 
         <aside class="contenedor__ultimosCampeones">
-            <div class="div__ultimosCampeones">
-                <h2>Ultimos Campeones</h2>
-                
-                <p>2021: Palmeiras</p>
-                <p>2020: Palmeiras</p>
-                <p>2019: Flamengo</p>
-                <p>2018: River Plate</p>
-                <p>2017: Atletico Nacional</p>
-                <p>2016: Gremio</p>
-                <p>2015: River</p>
-                <p>2014: San Lorenzo</p>
-                <p>2013: Corinthians</p>
-                <p>2012: Atletico Mineiro</p>
-                <p>2011: Santos</p>
-                
-            </div>
-        </aside>
+            
 
+            <div class="card mb-3">
+                <img src="../images/ultimoscamp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ultimos Campeones</h5>
+                <p class="card-text">Estos son los ultimos campeones de la Copa Brigdstone Libertadores de America, a lo largo de los años.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            
+
+        </aside>
 
     </section>
 

@@ -15,31 +15,48 @@
 
 <body>
 
-
-    <header>
-        <div class="contenedor__header">
-
-            <div class="contenedor__headerlogo">
-                <a href="index.html"> <img class="header__logo" src="images/logotodofutbol.png" alt="logo"></a>
-            </div>
-
-            <div class="contenedor__boton">
-                <label for="boton-menu">Menu</label>
-            </div>
-            <input type="checkbox" id="boton-menu">
-
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light">
             
-            <nav class="header__navegador  animate__animated animate__zoomIn">
-                <a href="index.html">NOTICIAS</a></li>
-                <a href="pages/argentina.html">ARGENTINA</a></li>
-                <a href="pages/partidoss.html">PARTIDOS</a></li>
-                <a href="pages/libertadores.html">LIBERTADORES</a></li>
-                <a href="pages/contacto.html">CONTACTO</a></li>  
-            </nav>
+            <div class="navegin container-fluid">
 
-        </div>
+            <div class="navegacion">
 
-    </header>
+            <div class="hedicon">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logotodofutbol.png" alt="" width="120" >
+                </a>
+            </div>
+            <div class="cont__nav">
+            <a class="navbar-brand" href="index.html">Noticias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/argentina.html">Argentina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/partidoss.html">Partidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/libertadores.html">Libertadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+
+            </div>
+
+            </div>
+
+        </nav>
+    </header>   
+
 
 
 
@@ -53,7 +70,33 @@
             <div class="noticiaPrincipal__contenedor animate__animated animate__backInLeft">
 
 
-                <img class="noticiaPrincipal__imagen" src="images/seleccionvenezuela.jpg" alt="argentinavsvenezuela">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/seleccionvenezuela.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/messiven.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/dimaria.jpg" class="d-block w-100 " alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
                 <div class="noticia__texto">
                 <h3 class="noticia__titulo"> ¡Gano la seleccion Argentina ante Venezuela! </h3>
                 <p>Con goles de Gonzalez, Di Maria y Messi, la seleccion Argentina vencio por 3 goles a Venezuela. Una destacada actuacion de Messi y una entrada impresionante de Di Maria ayudaron a obtener este resultado.</p>

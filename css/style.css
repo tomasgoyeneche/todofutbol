@@ -12,80 +12,46 @@
 }
 
 
+/*header 1 */
 
-
- /*header */
-
-header {
-    width: 100%;
-    height: 130px;
-    background-color: #246355;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4) ;
-    border-bottom: solid 5px #0f362d;
-}
-
-.contenedor__header {
-    display: flex;
-    width: 90%;
-    max-width: 1800px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.header__logo{
-    width: 150px;
-}
-.header__logo:hover {
-    opacity: 0.4;
-}
-
-.header__navegador a {
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px 15px;
-    line-height: normal;
-    font-size: 14px;
-    transition: all 500ms ease;
-    border-bottom: 4px solid transparent;
-    font-weight: bold;
-}
-
-.header__navegador a:hover {
-    color: #0f362d;
-    border-bottom: 3px solid #0f362d;
-}
-
-.contenedor__boton{
-    display: none;
-}
-.contenedor__boton label {
-    color: #fff;
-    background: #0f362d;
-    padding: 5px;
-    font-size: 14px;
-    border-radius: 3px;
-    cursor: pointer;
+.hedicon{
+    padding: 10px;
     
 }
 
-#boton-menu{
-    display: none;
+
+.navbar {
+    border-bottom: solid 5px black;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4) ;
+    border-bottom: solid 5px #0f362d;
+    background-color: #246355;
 }
 
+.navegacion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.nav-link:hover {
+    color: #0f362d;
+    border-bottom: 1px solid black;
 
+}
+.nav-link {
+    margin: 5px;
+}
+
+.cont__nav a:hover{
+    color: #0f362d;
+    border-bottom: 1px solid black;
+}
 
 /*section */
 
 /*pagina1 */
+
 .noticias {
-    padding-top: 7%;
     display: grid;
     grid-template-areas: " not1 not2";
     align-items: center;
@@ -131,11 +97,6 @@ header {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-.noticiaPrincipal__imagen {
-    width: 100%;
-    height: 85%;
-}
-
 .noticiaSecundaria {
     width: 100%;
     flex-wrap: wrap;
@@ -172,11 +133,11 @@ header {
 }
 
 
-/*pagina2 */
+/*pagina2*/
+
 .contenedor__general{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding-top: 8%;
     padding-bottom: 2%;
     width: 100%;
     background-image: url(../images/estadio.jpg);
@@ -186,11 +147,6 @@ header {
 }
 
 
-.contenedor__table{
-    width: 80%;
-    padding: 3%;
-    
-}
 
 .contenedor__tables{
     display: flex;
@@ -198,6 +154,13 @@ header {
     width: 100%;
     
 }
+
+.contenedor__table{
+    width: 50%;
+    padding: 3%;
+    text-align: center;
+}
+
 .table {
     background-color: white;
     text-align: left;
@@ -239,7 +202,7 @@ thead {
     
 }
 
-.card {
+.carta {
     width: 100%;
     height: 50%;
     margin: 30px;
@@ -251,12 +214,12 @@ thead {
     color: white;
 }
 
-.card__video {
+.carta__video {
     width: 100%;
     height: 80%;
 }
 
-.card__texto {
+.carta__texto {
     margin-top: 5%;
     color: black;
 }
@@ -277,8 +240,7 @@ thead {
     background-attachment: fixed;
     background-size: cover;
     padding: 1%;
-    margin-top: 5%;
-    
+    overflow: hidden;
 }
 .partido{ 
     margin: 15px;
@@ -343,12 +305,12 @@ thead {
 
 
 .contenedor__gral {
-    padding-top: 8%;
+    
     display: grid;
     grid-template-areas: "tit tit"
                         " sec asi";
     width: 100%;
-
+    align-items: center;
 }
 
 .contenedor__tabl {
@@ -405,15 +367,11 @@ thead {
     grid-area: asi;
 }
 
-.div__ultimosCampeones {
-    width: 60%;
-    font-size: 27px;
-    border-radius: 8px;
-    padding: 10px;
+.card{
+    max-width: 640px;
     background-color: #246355;
-    border-bottom: solid 10px #0f362d;
-    color: whitesmoke
-
+    border-bottom: solid 5px #0f362d;
+    color: whitesmoke;
 }
 
 /*pagina 5 */
@@ -423,7 +381,6 @@ thead {
 
 .fondoPagina{
     padding: 3%;
-    padding-top: 10%;
     background-image: url(../images/estadio.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -552,43 +509,7 @@ figure {
 
 @media (max-width: 768px) {
 
-    /*header */
-
-    header {
-        height: 90px;
-    }
-
-    .contenedor__headerlogo, .contenedor__boton{
-        line-height: 60px;
-    }
-
-    .header__logo {
-        width: 100px;
-    }
-
-    .header__navegador {
-        position: absolute;
-        background: #0f362df6;
-        width: 100%;  
-        height: 100vh;
-        top: 90px;
-        left: 0;
-        transition: all 500ms ease;
-        transform: translatex(-100%);
-    }
-
-    #boton-menu:checked ~ .header__navegador{
-        transform: translatex(0%);
-    }
-
-    .header__navegador a {
-        display: block;
-        margin-top: 10px;
-        color: whitesmoke;
-    }
-    .contenedor__boton{
-        display: block;
-    }
+    
 
     /*footer */
 
@@ -606,7 +527,7 @@ figure {
         width: 100%;
         grid-template-areas: " not1"
         "not2";
-        padding-top: 20%;
+        
         justify-items: center;
     }
 
@@ -628,32 +549,37 @@ figure {
     }
 
 
-    /*Pagina3 */
     
 
-    .contenedor__partidos{
-        padding-top: 15%;
-        flex-direction: column;
+
+
+    /*Pagina2 */
+
+    .carta__texto {
+        font-size: 16px;
     }
-
-
-
-
-    /*Pagina5 */
     
 
-    .fondoPagina {
-        padding-top: 25%;
-    }
 }
 
 
 @media (max-width: 1023px) {
 
+    .navegacion {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hedicon{
+        display: flex;
+        justify-content: center;
+    }
+    
+
      /*Pagina4 */
 
     .contenedor__gral {
-        margin-top: 13%;
         grid-template-areas: "tit"
                                 "sec"
                                 "asi";
@@ -678,11 +604,10 @@ figure {
 
 
 @media (max-width: 1300px) {
-
       /*Pagina2 */
     
     .contenedor__general {
-        padding-top: 16%;
+        
         width: 100%;
         grid-template-columns: 1fr;
         justify-items: center;
@@ -711,12 +636,12 @@ figure {
 
     }
     
-    .card__texto {
+    .carta__texto {
         margin-top: 0%;
 
     }
 
-    .card {
+    .carta {
         width: 80%;
         height: 100%;
     }
