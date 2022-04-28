@@ -19,7 +19,9 @@
     
 }
 
-
+.hedicon:hover {
+    opacity: 0.4;
+}
 .navbar {
     border-bottom: solid 5px black;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4) ;
@@ -495,6 +497,9 @@ figure {
     background-color: #0f362d;
     text-align: center;
 
+}
+.redes__links a:hover{
+    opacity: 0.4;
 }
 
 .redes__links img {
