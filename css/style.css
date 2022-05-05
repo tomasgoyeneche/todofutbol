@@ -12,7 +12,7 @@
 }
 
 
-/*header 1 */
+/*header */
 
 .hedicon{
     padding: 10px;
@@ -569,7 +569,7 @@ figure {
 
 
 @media (max-width: 1023px) {
-
+    /*header */
     .navegacion {
         display: block;
         align-items: center;

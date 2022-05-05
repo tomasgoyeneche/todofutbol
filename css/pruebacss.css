@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif; }
+
+/*header */
+.hedicon {
+  padding: 10px; }
+
+.hedicon:hover {
+  opacity: 0.4; }
+
+.navbar {
+  border-bottom: solid 5px black;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: solid 5px #0f362d;
+  background-color: #246355; }
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+
+.nav-link {
+  margin: 5px; }
+  .nav-link:hover {
+    color: #0f362d;
+    border-bottom: 1px solid black; }
+
+.cont__nav a:hover {
+  color: #0f362d;
+  border-bottom: 1px solid black; }
+
+/*section */
+/*pagina1 */
+.noticias {
+  display: grid;
+  grid-template-areas: " not1 not2";
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/estadio.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.noticiaPrincipal {
+  width: 100%;
+  margin: 30px;
+  margin-top: 30px;
+  grid-area: not1; }
+
+.noticia__texto {
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px; }
+
+.noticiaPrincipal__contenedor {
+  width: 90%;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  background-color: #246355;
+  border-bottom: solid 5px #0f362d;
+  color: white; }
+  .noticiaPrincipal__contenedor:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+
+.noticia__titulo {
+  color: black;
+  text-decoration: underline;
+  margin-bottom: 5px; }
+
+.noticiaSecundaria {
+  width: 100%;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-area: not2; }
+
+.noticiaSecundaria__contenedor {
+  width: 80%;
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  background-color: #246355;
+  border-bottom: solid 5px #0f362d;
+  color: white; }
+  .noticiaSecundaria__contenedor:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+
+.noticiaSecundaria__imagen {
+  width: 100%;
+  height: 200px; }
+
+/*footer */
+.piePagina {
+  width: 100%;
+  background-color: #246355;
+  border-bottom: solid 5px #0f362d; }
+
+.piePagina__contenedor {
+  width: 100%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-column-gap: 150px; }
+
+figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.piePagina__logo {
+  width: 250px; }
+
+.box h2 {
+  color: #1a1919;
+  margin-bottom: 25px;
+  font-size: 25px;
+  text-align: center; }
+
+.box p {
+  color: #1f1d1d;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center; }
+
+.redes__links {
+  text-align: center; }
+  .redes__links a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0f362d;
+    text-align: center; }
+    .redes__links a:hover {
+      opacity: 0.4; }
+  .redes__links img {
+    width: 30px;
+    height: 30px; }
+
+/*Responsive */
+@media (max-width: 768px) {
+  /*footer */
+  .piePagina__contenedor {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; }
+  /*Pagina1 */
+  .noticias {
+    width: 100%;
+    grid-template-areas: " not1" "not2";
+    justify-items: center; }
+  .noticiaSecundaria {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 93%; }
+  .noticiaPrincipal {
+    width: 90%;
+    justify-items: center; }
+  .noticiaPrincipal__contenedor {
+    width: 100%; } }
+
+@media (max-width: 1023px) {
+  /*header */
+  .navegacion {
+    display: block;
+    align-items: center;
+    width: 100%; }
+  .hedicon {
+    display: flex;
+    justify-content: center; } }
