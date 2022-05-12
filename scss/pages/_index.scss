@@ -3,6 +3,10 @@
 $colorfondo:#246355;
 $bordeverde: solid 5px #0f362d;
 
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,6 +15,26 @@ $bordeverde: solid 5px #0f362d;
     font-family: 'Quicksand', sans-serif;
     
 }
+
+
+/*mapa tamaño noticia*/
+$tamaño:("Principal":100%, "Secundaria":100%);
+
+@each $name, $wid in $tamaño {
+    .noticia#{$name}{
+        width: 100%;
+    }  
+}
+
+/*map get*/
+
+$estilonavegacion: (
+    disp: flex,
+    ali: center,
+    tamaño: 100%
+
+);
+
 
 /*header */
 
@@ -21,18 +45,27 @@ $bordeverde: solid 5px #0f362d;
 .hedicon:hover {
     opacity: 0.4;
 }
-.navbar {
-    border-bottom: solid 5px black;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4) ;
+
+/*extend */
+.ext {
     border-bottom: $bordeverde;
     background-color: $colorfondo;
 }
-.navegacion {
-    display: flex;
-    align-items: center;
-    width: 100%;
+.navbar {
+    @extend .ext;
+    border-bottom: solid 5px black;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4) ;
     
 }
+
+
+/*map get navegacion*/
+.navegacion {
+    display: map-get($estilonavegacion, disp );
+    align-items: map-get($estilonavegacion, ali );
+    width: map-get($estilonavegacion, tamaño );
+}
+
 .nav-link {
     margin: 5px;
     &:hover {
@@ -56,15 +89,21 @@ $bordeverde: solid 5px #0f362d;
 
 /*pagina1 */
 
+/*mixins */
+@mixin backr-backa-backs {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .noticias {
     display: grid;
     grid-template-areas: " not1 not2";
     align-items: center;
     justify-content: center;
     background-image: url(../images/estadio.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    @include backr-backa-backs;
+    
 }
 
 .noticiaPrincipal {
@@ -117,14 +156,13 @@ $bordeverde: solid 5px #0f362d;
 }
 
 .noticiaSecundaria__contenedor {
+    @extend .ext;
     width: 80%;
     overflow: hidden;
     margin: 30px;
     text-align: center;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     cursor: default;
-    background-color: $colorfondo;
-    border-bottom: $bordeverde;
     color: white;
 
     &:hover {
@@ -141,9 +179,9 @@ $bordeverde: solid 5px #0f362d;
 /*footer */
 
 .piePagina {
+    @extend .ext;
     width: 100%;
-    background-color: $colorfondo;
-    border-bottom: $bordeverde;
+    
 
 }
 .piePagina__contenedor{
