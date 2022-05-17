@@ -1,20 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Quicksand', sans-serif; }
-
-/*mapa tamaño noticia*/
-.noticiaPrincipal {
-  width: 100%; }
-
-.noticiaSecundaria {
-  width: 100%; }
-
 /*map get*/
 /*header */
 .hedicon {
@@ -24,9 +10,9 @@
   opacity: 0.4; }
 
 /*extend */
-.ext, .navbar, .noticiaSecundaria__contenedor, .piePagina {
-  border-bottom: solid 5px #0f362d;
-  background-color: #246355; }
+.ext, .navbar {
+  border-bottom: solid 5px black;
+  background-color: whitesmoke; }
 
 .navbar {
   border-bottom: solid 5px black;
@@ -48,6 +34,20 @@
   color: #0f362d;
   border-bottom: 1px solid black; }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif; }
+
+/*mapa tamaño noticia*/
+.noticiaPrincipal {
+  width: 100%; }
+
+.noticiaSecundaria {
+  width: 100%; }
+
 /*section */
 /*pagina1 */
 /*mixins */
@@ -56,8 +56,8 @@
   grid-template-areas: " not1 not2";
   align-items: center;
   justify-content: center;
-  background-image: url(../images/estadio.jpg);
-  background-repeat: no-repeat;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover; }
 
@@ -77,9 +77,9 @@
   overflow: hidden;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   cursor: default;
-  background-color: #246355;
-  border-bottom: solid 5px #0f362d;
-  color: white; }
+  background-color: whitesmoke;
+  border-bottom: solid 5px black;
+  color: black; }
   .noticiaPrincipal__contenedor:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
 
@@ -97,13 +97,15 @@
   grid-area: not2; }
 
 .noticiaSecundaria__contenedor {
+  border-bottom: solid 5px black;
+  background-color: whitesmoke;
   width: 80%;
   overflow: hidden;
   margin: 30px;
   text-align: center;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   cursor: default;
-  color: white; }
+  color: black; }
   .noticiaSecundaria__contenedor:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
 
@@ -111,8 +113,251 @@
   width: 100%;
   height: 200px; }
 
+/*pagina2*/
+.contenedor__general {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 2%;
+  width: 100%;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.table__zona {
+  color: white; }
+
+.contenedor__tables {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.contenedor__table {
+  width: 50%;
+  padding: 3%;
+  text-align: center; }
+
+.table {
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  border-bottom: solid 5px black; }
+
+th, td {
+  padding: 10px; }
+
+tr:nth-child(even) {
+  background-color: #ddd; }
+
+thead {
+  background-color: black;
+  border-bottom: solid 5px gray;
+  color: whitesmoke; }
+
+.contenedor__aside {
+  display: inline-flex;
+  width: 100%; }
+
+.contenedor__cards {
+  display: grid;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+
+.carta {
+  width: 100%;
+  height: 50%;
+  margin: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  background-color: whitesmoke;
+  border-bottom: solid 5px black;
+  color: white; }
+
+.carta__video {
+  width: 100%;
+  height: 80%; }
+
+.carta__texto {
+  margin-top: 3%;
+  color: black; }
+
+/*pagina3 */
+.contenedor__partidos {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 1%;
+  overflow: hidden; }
+
+.partido {
+  margin: 15px;
+  background-color: whitesmoke;
+  border-bottom: solid 5px black;
+  border-radius: 10px;
+  color: black;
+  padding: 10px; }
+
+.copaliga {
+  background-color: #31aac9;
+  border-bottom: solid 5px #d8e0e2;
+  color: #d8e0e2; }
+
+.primeraNacional {
+  background-color: #d8e0e2;
+  border-bottom: solid 5px #31aac9;
+  color: #31aac9; }
+
+.ligaEspañola {
+  background-color: #dd3737;
+  border-bottom: solid 5px #d8e65a;
+  color: #d8e65a; }
+
+.liga {
+  margin: 30px;
+  border-radius: 10px;
+  padding: 10px; }
+
+.libertadores {
+  background-color: #161414;
+  border-bottom: solid 5px #abad22;
+  color: #abad22; }
+
+.sudamericana {
+  background-color: #1b2cc5;
+  border-bottom: solid 5px #8a8a86;
+  color: #8a8a86; }
+
+.ligaItaliana {
+  background-color: #179417;
+  border-bottom: solid 5px #a30404;
+  color: #ddddd9; }
+
+.dia {
+  margin: 35px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #1f1d1d;
+  color: #e2d3d3;
+  border-bottom: solid 5px #cfc5c5; }
+
+/*pagina 4 */
+.contenedor__gral {
+  display: grid;
+  grid-template-areas: "tit tit" " sec asi";
+  width: 100%;
+  align-items: center; }
+
+.contenedor__tabl {
+  width: 100%;
+  padding: 2%;
+  grid-area: sec;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contenedor__grupo {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1%; }
+
+.tabla {
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: solid 5px black; }
+
+.contenedor__t {
+  margin: 10px;
+  width: 90%;
+  text-align: left; }
+
+.titulo__libertadores {
+  text-align: center;
+  padding: 10px;
+  grid-area: tit;
+  color: white; }
+
+.grupo_t {
+  color: whitesmoke; }
+
+.contenedor__gral, .titulo__libertadores {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.contenedor__ultimosCampeones {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-area: asi; }
+
+.card {
+  max-width: 640px;
+  background-color: whitesmoke;
+  border-bottom: solid 5px black;
+  color: black; }
+
+/*pagina 5 */
+.fondoPagina {
+  padding: 3%;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.contenedor__contacto {
+  background-color: black;
+  color: #fff;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%; }
+
+.contacto__titulo {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 2%; }
+
+.contacto__general {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  padding: 0.5em; }
+
+.contenedor__form {
+  background-color: #222222; }
+  .contenedor__form form {
+    margin: 0;
+    padding: 1.5em; }
+
+.contenedor__form button, .contenedor__form input, .contenedor__form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid whitesmoke; }
+
+.contenedor__form button {
+  background-color: black;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em; }
+
 /*footer */
 .piePagina {
+  border-bottom: solid 5px black;
+  background-color: whitesmoke;
   width: 100%; }
 
 .piePagina__contenedor {
@@ -154,18 +399,19 @@ figure {
   .redes__links a {
     display: inline-block;
     text-decoration: none;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color: #0f362d;
-    text-align: center; }
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px; }
     .redes__links a:hover {
       opacity: 0.4; }
   .redes__links img {
-    width: 30px;
-    height: 30px; }
+    width: 35px;
+    height: 35px; }
 
 /*Responsive */
 @media (max-width: 768px) {
@@ -189,7 +435,10 @@ figure {
     width: 90%;
     justify-items: center; }
   .noticiaPrincipal__contenedor {
-    width: 100%; } }
+    width: 100%; }
+  /*Pagina2 */
+  .carta__texto {
+    font-size: 16px; } }
 
 @media (max-width: 1023px) {
   /*header */
@@ -199,4 +448,40 @@ figure {
     width: 100%; }
   .hedicon {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  /*Pagina4 */
+  .contenedor__gral {
+    grid-template-areas: "tit" "sec" "asi";
+    justify-content: center; }
+  .contenedor__tabl {
+    grid-template-columns: 1fr; }
+  .contenedor__ultimosCampeones {
+    padding: 5%;
+    width: 100%; }
+  .div__ultimosCampeones {
+    width: 80%; } }
+
+@media (max-width: 1300px) {
+  /*Pagina2 */
+  .contenedor__general {
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .contenedor__tables {
+    width: 100%;
+    flex-direction: column;
+    padding: 5%; }
+  .contenedor__table {
+    width: 100%;
+    padding: 1%;
+    text-align: center; }
+  .table {
+    width: 100%; }
+  .contenedor__cards {
+    flex-direction: column;
+    padding: 5%; }
+  .carta__texto {
+    margin-top: 0%; }
+  .carta {
+    width: 80%;
+    height: 100%; } }

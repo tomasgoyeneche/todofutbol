@@ -1,1 +1,14 @@
-@import "pages/index"
+@import "utilities/_fonts";
+@import "utilities/variables";
+
+@import "layout/header";
+
+@import "pages/index";
+@import "pages/argentina";
+@import "pages/partidos";
+@import "pages/libertadores";
+@import "pages/contacto";
+
+@import "layout/footer";
+
+@import "views/media";

@@ -1,0 +1,94 @@
+/*pagina2*/
+
+.contenedor__general{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2%;
+    width: $fullwidth;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.table__zona{
+    color: white;
+}
+
+.contenedor__tables{
+    display: flex;
+    justify-content: space-between;
+    width: $fullwidth;
+    
+}
+
+.contenedor__table{
+    width: 50%;
+    padding: 3%;
+    text-align: center;
+}
+
+.table {
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    border-bottom: $bordenegro;
+    
+}
+
+
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+thead {
+    background-color: black;
+    border-bottom: solid 5px gray;
+    color: whitesmoke;
+    
+}
+
+
+
+.contenedor__aside {
+    display: inline-flex;
+    width: $fullwidth;
+}
+
+.contenedor__cards {
+    display: grid;
+    width: $fullwidth;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.carta {
+    width: $fullwidth;
+    height: 50%;
+    margin: 30px;
+    
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    background-color: $colorfondo;
+    border-bottom: $bordenegro;
+    color: white;
+}
+
+.carta__video {
+    width: $fullwidth;
+    height: 80%;
+}
+
+.carta__texto {
+    margin-top: 3%;
+    color: black;
+}
+

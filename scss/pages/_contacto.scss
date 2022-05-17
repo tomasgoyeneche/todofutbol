@@ -1,0 +1,64 @@
+/*pagina 5 */
+
+
+.fondoPagina{
+    padding: 3%;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor__contacto {
+    background-color: black;
+    color: #fff;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+.contacto__titulo {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2%;
+
+}
+
+.contacto__general {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255,.3);
+    padding: 0.5em;
+}
+
+.contenedor__form {
+    background-color: #222222;
+    form {
+        margin: 0;
+        padding: 1.5em;
+    }
+}
+
+
+
+.contenedor__form {
+
+    button, input, textarea{
+    width: $fullwidth;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid whitesmoke ;
+    }
+}
+
+.contenedor__form {
+
+    button{
+    background-color: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    }
+}
