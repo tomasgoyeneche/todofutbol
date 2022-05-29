@@ -50,7 +50,6 @@
 
 /*section */
 /*pagina1 */
-/*mixins */
 .noticias {
   display: grid;
   grid-template-areas: " not1 not2";
